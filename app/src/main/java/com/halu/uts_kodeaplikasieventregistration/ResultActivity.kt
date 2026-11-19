@@ -13,7 +13,7 @@ class ResultActivity : AppCompatActivity() {
         val jumlah: Int = intent.getIntExtra("EXTRA_TIKET", 0) // PENJELASAN TODO-13: terima Int (bukan getStringExtra) dari putExtra di MainActivity
         val total: Int = intent.getIntExtra("EXTRA_TARIF", 0) // PENJELASAN TODO-14: terima Int total dari putExtra di MainActivity
 
-        ringkasan.text = "{satu} | {dua} | {jumlah}"
+        ringkasan.text = getString(R.string.teksRingkasan, satu, dua, jumlah)
         /* PENJELASAN TODO-15: tampilkan String dan jumlah pada ringkasan
                        yang berisi tentang satu: Nama Peserta
                                             dua: Nama Event
@@ -21,7 +21,7 @@ class ResultActivity : AppCompatActivity() {
          */
 
 
-        totalView.text = "Total: {total}"
+        totalView.text = getString(R.string.teksTotal, total)
         /* PENJELASAN TODO-16: tampilkan total (konversi Int ke teks hanya di UI)
                                 menampilkan total harga yang telah diterima,
                                 kemudian dikonversi menjadi teks dengan cara

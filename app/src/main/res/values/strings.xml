@@ -5,4 +5,6 @@
     <string name="nama_event">Nama Event</string>
     <string name="jumlah_tiket">Jumlah Tiket</string>
     <string name="hitung_dan_lihat_hasil">Hitung dan Lihat Hasil</string>
+    <string name="teksRingkasan">%1$s | %2$s | %3$d</string>
+    <string name="teksTotal">Total: %1$d</string>
 </resources>
